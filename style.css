@@ -1,0 +1,187 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--background1, rgb(255, 255, 255));
+}
+
+:root {
+  --background-header: rgb(135, 185, 215);
+  --background1: rgb(238, 231, 238);
+  --background2: rgb(255, 255, 255);
+  --background-footer: rgb(87, 73, 130);
+  --text1: rgb(31, 26, 102);
+  --text2: rgb(0, 0, 0);
+  --text-footer: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+:root.light {
+  --background1: rgb(255, 255, 255);
+  --background2: rgb(255, 255, 255);
+  --text1: rgb(0, 0, 0);
+  --text2: rgb(0, 0, 0);
+  --text-footer: rgb(0, 0, 0);
+  font-size: 16px;
+}
+
+:root.dark {
+  --background1: rgb(0, 0, 0);
+  --background2: rgb(0, 0, 0);
+  --text1: rgb(255, 255, 255);
+  --text2: rgb(255, 255, 255);
+  --text-footer: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+
+
+
+
+header {
+  height: 40px;
+  background-color: var(--background-header);
+  font-size: 1rem;
+}
+
+.header-image {
+  height: 35px;
+  width: 35px;
+  margin-left: 10px;
+}
+
+.container {
+  display: flex;
+  height: calc(100% - 80px)
+}
+
+.content1 {
+  flex: 1;
+  background-image: url(./images/marek-piwnicki-2-unsplash.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.dark-line {
+  display: flex;
+  background: rgba(0, 0, 0, 0.5);
+  height: 12%;
+  margin-top: 52vh;
+  align-items: center;
+}
+
+.line-image {
+  height: 64px;
+  width: 64px;
+  margin-left: 15%;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url(./fonts/Caveat-Bold.ttf);
+}
+
+.line-text {
+  font-family: Caveat;
+  font-size: 2.5rem;
+  color: rgb(216, 196, 117);
+}
+
+.photo-credit-text {
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgb(140, 131, 193);
+  margin-top: 23vh;
+}
+
+
+
+
+.content2 {
+  flex: 2;
+}
+
+.content2-top {
+  height: 35%;
+  background: var(--background1);
+  overflow: auto;
+}
+
+.text1 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text1);
+  max-width: 60%;
+  margin-top: 10vh;
+  margin-left: 8%;
+}
+
+.text2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text1);
+  margin-left: 8%;
+}
+
+.content2-middle {
+  height: 30%;
+  background: var(--background2);
+  box-shadow: 0px 0px 10px gray;
+  position: relative;
+  z-index: 1;
+}
+
+form {
+  display: flex;
+}
+
+input, label {
+  display:block;
+}
+
+
+
+
+.content2-bottom {
+  height: 35%;
+  background: var(--background1);
+}
+
+button {
+  background-color: rgb(250, 223, 112);
+  border-style: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 5vh;
+  margin-left: 8%;
+  font-weight: 500;
+  color: var(--text1);
+}
+
+.text4 {
+  font-size: 1rem;
+  color: var(--text1);
+  margin-left: 8%;
+}
+
+
+
+
+footer {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-footer);
+  font-size: 1rem;
+  color: var(--text-footer);
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
