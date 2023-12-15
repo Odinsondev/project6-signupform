@@ -37,9 +37,6 @@ body {
 }
 
 
-
-
-
 header {
   height: 40px;
   background-color: var(--background-header);
@@ -56,6 +53,7 @@ header {
   display: flex;
   height: calc(100% - 80px)
 }
+
 
 .content1 {
   flex: 1;
@@ -97,15 +95,13 @@ header {
   margin-top: 23vh;
 }
 
-
-
-
 .content2 {
   flex: 2;
 }
 
+
 .content2-top {
-  height: 35%;
+  height: 33%;
   background: var(--background1);
   overflow: auto;
 }
@@ -115,7 +111,7 @@ header {
   font-weight: 500;
   color: var(--text1);
   max-width: 60%;
-  margin-top: 10vh;
+  margin-top: 8vh;
   margin-left: 8%;
 }
 
@@ -126,27 +122,70 @@ header {
   margin-left: 8%;
 }
 
+
 .content2-middle {
-  height: 30%;
+  height: 34%;
   background: var(--background2);
   box-shadow: 0px 0px 10px gray;
   position: relative;
   z-index: 1;
+  overflow: auto;
+}
+
+.text3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text1);
+  margin: 2.5vh 0 1.6vh 8%;
 }
 
 form {
   display: flex;
 }
 
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 8%;
+}
+
+label {
+  font-size: 0.8rem;
+  margin-top: 1.5vh;
+  margin-bottom: 0.2vh;
+  color: rgb(59, 59, 59);
+}
+
 input, label {
   display:block;
 }
 
+input {
+  border: 1px solid rgb(190, 190, 197);
+  border-radius: 5px;
+}
 
+input:focus {
+  outline: 0;
+  border: 1px solid rgb(76, 76, 151);
+  box-shadow: 0px 0px 3px rgb(76, 76, 151);
+}
+
+input:focus:invalid {
+  border: 1px solid rgb(163, 41, 41);
+  box-shadow: 0px 0px 3px rgb(163, 41, 41);
+}
+
+#error {
+  margin: 0.2vh 0 0 0;
+  font-size: 0.8rem;
+  color: rgb(163, 41, 41);
+}
 
 
 .content2-bottom {
-  height: 35%;
+  height: 33%;
   background: var(--background1);
 }
 
@@ -162,12 +201,24 @@ button {
   color: var(--text1);
 }
 
+button:hover {
+  background-color: rgb(251, 219, 89);
+}
+
+button:active {
+  background-color: rgb(254, 203, 85);
+}
+
 .text4 {
   font-size: 1rem;
   color: var(--text1);
   margin-left: 8%;
 }
 
+a {
+  color: rgb(1, 1, 138);
+  text-decoration: none;
+}
 
 
 
